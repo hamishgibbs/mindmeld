@@ -1,5 +1,0 @@
-
-#
-def stupid():
-
-    return True
