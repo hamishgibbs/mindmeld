@@ -1,17 +1,9 @@
-import uuid
 from ..mindmeld import attribute
+from ..mindmeld import entity
 
 
 def create_object(title, **kwargs):
 
-    return _create_object([
+    return entity._create_entity([
         attribute.create_attribute("title", title, **kwargs)
     ])
-
-
-def _create_object(attributes: list):
-
-    return {
-        "uuid": str(uuid.uuid4()),
-        "attributes": attributes
-    }
