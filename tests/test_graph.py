@@ -46,6 +46,5 @@ def test_get_edges(example_edges):
 
     exp_uuids = [x["uuid"] for x in example_edges["nodes"]]
     sources = [x["source"] for x in edges]
-    targets = [x["target"] for x in edges]
 
     assert exp_uuids == sources
