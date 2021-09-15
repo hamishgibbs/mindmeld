@@ -13,13 +13,11 @@ def create_attribute(key, value, source=None, cby="hamishgibbs"):
     }
 
 
-def modify_attribute(attribute, key, value, source=None, mby="hamishgibbs"):
+def modify_attribute(attribute, value, source=None, mby="hamishgibbs"):
 
-    old_key = attribute["key"]
     old_value = attribute["value"]
     old_source = attribute["source"]
 
-    attribute["key"] = key
     attribute["value"] = value
     attribute["source"] = source
 
@@ -27,7 +25,6 @@ def modify_attribute(attribute, key, value, source=None, mby="hamishgibbs"):
         {
             "mtime": datetime.timestamp(datetime.now()),
             "mby": mby,
-            "old_key": old_key,
             "old_value": old_value,
             "old_source": old_source,
         }

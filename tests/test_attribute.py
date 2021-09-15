@@ -21,20 +21,17 @@ def test_create_attribute(new_attribute):
 def test_modify_attribute_once(new_attribute):
 
     modified = attribute.modify_attribute(new_attribute,
-                                          key="title2",
                                           value="Prince Chun",
                                           source="WikiWiki",
                                           mby="hamishgibbs")
 
     assert len(modified["modifications"]) == 1
-    assert modified["key"] == "title2"
     assert modified["value"] == "Prince Chun"
     assert modified["source"] == "WikiWiki"
 
     modification = modified["modifications"][0]
 
     assert modification["mby"] == "hamishgibbs"
-    assert modification["old_key"] == "title"
     assert modification["old_value"] == "Zaifeng, Prince Chun"
     assert modification["old_source"] == "https://www.google.com/"
     assert type(modification["mtime"]) is float
@@ -43,11 +40,9 @@ def test_modify_attribute_once(new_attribute):
 def test_modify_attribute_twice(new_attribute):
 
     modified = attribute.modify_attribute(new_attribute,
-                                          key="title2",
                                           value="Prince Chun2")
 
     modified = attribute.modify_attribute(modified,
-                                          key="title3",
                                           value="Prince Chun3")
 
     assert len(modified["modifications"]) == 2
