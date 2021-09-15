@@ -32,6 +32,6 @@ def test_mindmeld():
 
     print(graph.get_nodes(objects))
     print(graph.get_edges(relationships))
-    #print(relationships)
+    print(relationships)
 
     assert True
