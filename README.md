@@ -62,7 +62,9 @@ Objects MUST have one special attribute: `title`.
 ``` {shell}
 {
     "uuid": "b5ca74a8-5559-4cd1-956d-efd0803745af",
-    "attributes": [],
+    "attributes": [
+      {"key": "title", ...}
+    ],
 }
 ```
 
@@ -73,6 +75,10 @@ Relationships MUST have three special attributes: `relationship` (i.e. lived), `
 ``` {shell}
 {
     "uuid": "b5ca74a8-5559-4cd1-956d-efd0803745af",
-    "attributes": [],
+    "attributes": [
+      {"key": "relationship", ...},
+      {"key": "source", ...},
+      {"key": "target", ...}
+    ],
 }
 ```
