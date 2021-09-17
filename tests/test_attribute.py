@@ -22,18 +22,18 @@ def test_modify_attribute_once(new_attribute):
 
     modified = attribute.modify_attribute(new_attribute,
                                           value="Prince Chun",
-                                          source="WikiWiki",
+                                          citation="WikiWiki",
                                           mby="hamishgibbs")
 
     assert len(modified["modifications"]) == 1
     assert modified["value"] == "Prince Chun"
-    assert modified["source"] == "WikiWiki"
+    assert modified["citation"] == "WikiWiki"
 
     modification = modified["modifications"][0]
 
     assert modification["mby"] == "hamishgibbs"
     assert modification["old_value"] == "Zaifeng, Prince Chun"
-    assert modification["old_source"] == "https://www.google.com/"
+    assert modification["old_citation"] == "https://www.google.com/"
     assert type(modification["mtime"]) is float
 
 

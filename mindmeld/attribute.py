@@ -8,25 +8,25 @@ def create_attribute(key, value, source=None, cby="hamishgibbs"):
         "value": value,
         "cby": cby,
         "ctime": datetime.timestamp(datetime.now()),
-        "source": source,
+        "citation": source,
         "modifications": []
     }
 
 
-def modify_attribute(attribute, value, source=None, mby="hamishgibbs"):
+def modify_attribute(attribute, value, citation=None, mby="hamishgibbs"):
 
     old_value = attribute["value"]
-    old_source = attribute["source"]
+    old_citation = attribute["citation"]
 
     attribute["value"] = value
-    attribute["source"] = source
+    attribute["citation"] = citation
 
     attribute["modifications"].append(
         {
             "mtime": datetime.timestamp(datetime.now()),
             "mby": mby,
             "old_value": old_value,
-            "old_source": old_source,
+            "old_citation": old_citation,
         }
     )
 
