@@ -1,5 +1,5 @@
 import pytest
-from ..mindmeld import attribute
+from mindmeld import attribute
 
 
 @pytest.fixture()

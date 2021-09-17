@@ -1,7 +1,7 @@
 import pytest
-from ..mindmeld import graph
-from ..mindmeld import object
-from ..mindmeld import relationship
+from mindmeld import graph
+from mindmeld import object
+from mindmeld import relationship
 
 
 @pytest.fixture()

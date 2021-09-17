@@ -1,4 +1,4 @@
-from ..mindmeld import object
+from mindmeld import object
 
 
 def test_create_object():

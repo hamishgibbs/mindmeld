@@ -1,4 +1,4 @@
-from ..mindmeld import relationship
+from mindmeld import relationship
 
 
 def test_create_relationship():

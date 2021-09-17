@@ -1,4 +1,4 @@
-from ..mindmeld import entity
+from mindmeld import entity
 
 
 def test__create_entity():

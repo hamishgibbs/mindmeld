@@ -1,6 +1,6 @@
 # Integration test of system so far
 
-from ..mindmeld import object, relationship, graph, attribute
+from mindmeld import object, relationship, graph, attribute
 
 
 def test_mindmeld():
