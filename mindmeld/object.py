@@ -1,5 +1,5 @@
-from ..mindmeld import attribute
-from ..mindmeld import entity
+from mindmeld import attribute
+from mindmeld import entity
 
 
 def create_object(title, **kwargs):
