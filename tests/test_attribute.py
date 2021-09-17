@@ -8,7 +8,7 @@ def new_attribute():
     return attribute.create_attribute(key="title",
                                       value="Zaifeng, Prince Chun",
                                       cby="hamishgibbs",
-                                      source="https://www.google.com/")
+                                      citation="https://www.google.com/")
 
 
 def test_create_attribute(new_attribute):

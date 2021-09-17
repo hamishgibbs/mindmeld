@@ -1,14 +1,14 @@
 from datetime import datetime
 
 
-def create_attribute(key, value, source=None, cby="hamishgibbs"):
+def create_attribute(key, value, citation=None, cby="hamishgibbs"):
 
     return {
         "key": key,
         "value": value,
         "cby": cby,
         "ctime": datetime.timestamp(datetime.now()),
-        "citation": source,
+        "citation": citation,
         "modifications": []
     }
 
