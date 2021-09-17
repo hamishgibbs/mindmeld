@@ -31,3 +31,5 @@ def modify_attribute(attribute, value, citation=None, mby="hamishgibbs"):
     )
 
     return attribute
+
+# TODO: get attribute(s) by key name
